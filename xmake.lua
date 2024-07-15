@@ -5,7 +5,7 @@ set_toolset("cxx", "clang++") -- breaks on Nix without this line
 set_languages("c++20")
 
 set_defaultmode("debug")
-set_policy("build.warning", true)
+set_policy("build.warning", false)
 
 add_rules("mode.release", "mode.debug")
 add_requires("ncurses")
